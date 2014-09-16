@@ -1,0 +1,11 @@
+$color-ruby: #b63535;
+$color-white: #fbfbfb;
+$color-brown: #423215;
+$color-black: #555;
+$color-gray: #c0c0c0;
+
+$font: 'Palatino Linotype', Palatino, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', serif;
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}

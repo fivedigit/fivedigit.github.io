@@ -1,0 +1,25 @@
+<div id="sidebar">
+  <nav>
+    <div class="row">
+      <div class="small-12 medium-6 large-12 columns">
+        <div class="title">
+          <h5>Latest Posts</h5>
+        </div>
+        <ul>
+          {% for post in site.posts limit: 10 %}
+            <li>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-12 columns">
+        <div class="title">
+          <h5>Tags</h5>
+        </div>
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

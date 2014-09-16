@@ -1,15 +1,63 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<article itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="title">
+        <a href="{{ post.permalink }}" itemprop="url">
+          <span itemprop="name">{{ page.title }}</span>
+        </a>
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="info">
+        <div class="date">
+          Posted on
+          <span itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</span>
+          by
+          <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ page.author }}</span>
+          </span>
+          in
+          <span class="tags">
+            {% for tag in page.tags %}
+              <a href="/tags/{{ tag }}" title="{{ tag | capitalize }} posts">
+                <span itemprop="articleSection">{{ tag | capitalize }}</span>
+              </a>
+            {% endfor %}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="text-justify" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  <div class="row prev-next">
+    <div class="small-12 medium-6 columns">
+      <div class="left">
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" rel="prev" title="{{ page.previous.title }}">
+          ← {{ page.previous.title }}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="small-12 medium-6 columns">
+      <div class="right">
+        {% if page.next %}
+        <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">
+          {{ page.next.title }} →
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

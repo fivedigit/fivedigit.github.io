@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 
   {% include head.html %}
 
-  <body>
+  <body itemscope itemtype="http://schema.org/Blog">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="row" id="content">
+      <div class="small-12 large-8 columns">
         {{ content }}
+      </div>
+      <div class="small-12 large-4 columns">
+        {% include navigation.html %}
       </div>
     </div>
 
-    {% include footer.html %}
+    <script src="{{ "/js/vendor/jquery.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/foundation.min.js" | prepend: site.baseurl }}"></script>
+    <script>
+      $(document).foundation();
+    </script>
 
   </body>
 
