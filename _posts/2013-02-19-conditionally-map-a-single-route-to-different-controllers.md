@@ -3,6 +3,7 @@ layout: post
 title:  "Conditionally map a single route to different controllers"
 date:   2013-02-19 19:14:47
 author: "Jeroen Weeink"
+description: "In Rails it's easy to have identical routes which conditionally send the request to different controllers. Read this blog post to find out how to work with constraint objects in your routes!"
 ---
 Sometimes it's useful to have the same route conditionally map to different controllers. To illustrate this, imagine we have a blog with categories and posts, each of which have a similar URL, `/some-category` for categories and `/some-post` for posts. Our `routes.rb` file looks something like this:
 

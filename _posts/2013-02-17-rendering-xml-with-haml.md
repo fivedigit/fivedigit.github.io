@@ -3,6 +3,7 @@ layout: post
 title:  "Rendering XML with Haml"
 date:   2013-02-17 09:44:57
 author: "Jeroen Weeink"
+description: "Everyone knows how to render standard HTML views in Rails with Haml, but rendering XML views using Haml is just as easy, if not easier!"
 ---
 Haml makes it incredibly easy to render your HTML views. It's cleaner than HTML because it relies on indentation to define the element tree structure rather than closing tags.
 
