@@ -13,10 +13,6 @@ layout: default
             {{ post.date | date: "%Y-%m-%d" }}
           </div>
         </div>
-        <div class="text-justify">
-          {{ post.excerpt }}
-        </div>
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read more</a>
       </article>
     {% endfor %}
 </div>
