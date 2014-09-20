@@ -3,7 +3,6 @@ layout: post
 title:  "Side effects of Kernel#Array"
 date:   2014-01-23 07:32:40
 author: "Jeroen Weeink"
-tags:   ruby array
 ---
 [`Kernel#Array`](http://devdocs.io/ruby/kernel#method-i-Array) converts an object to an Array by calling `to_ary` or `to_a` on the object passed into it. This works very well to convert most objects into an array:
 

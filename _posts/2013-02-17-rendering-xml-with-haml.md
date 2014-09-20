@@ -3,7 +3,6 @@ layout: post
 title:  "Rendering XML with Haml"
 date:   2013-02-17 09:44:57
 author: "Jeroen Weeink"
-tags:   haml xml view
 ---
 Haml makes it incredibly easy to render your HTML views. It's cleaner than HTML because it relies on indentation to define the element tree structure rather than closing tags.
 

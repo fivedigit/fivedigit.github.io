@@ -21,14 +21,6 @@ layout: default
           <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             <span itemprop="name">{{ page.author }}</span>
           </span>
-          in
-          <span class="tags">
-            {% for tag in page.tags %}
-              <a href="/tags/{{ tag }}" title="{{ tag | capitalize }} posts">
-                <span itemprop="articleSection">{{ tag | capitalize }}</span>
-              </a>
-            {% endfor %}
-          </span>
         </div>
       </div>
     </div>

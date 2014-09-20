@@ -11,15 +11,8 @@ layout: default
         <div class="info">
           <div class="date">
             {{ post.date | date: "%Y-%m-%d" }}
+            by
             <span>{{ post.author }}</span>
-            in
-            <span class="tags">
-              {% for tag in post.tags %}
-                <a href="/tags/{{ tag }}" title="{{ tag | capitalize }} posts">
-                  <span itemprop="articleSection">{{ tag | capitalize }}</span>
-                </a>
-              {% endfor %}
-            </span>
           </div>
         </div>
         <div class="text-justify">
@@ -28,6 +21,4 @@ layout: default
         <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read more</a>
       </article>
     {% endfor %}
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>

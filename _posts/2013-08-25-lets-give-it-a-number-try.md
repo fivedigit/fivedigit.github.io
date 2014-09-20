@@ -3,8 +3,6 @@ layout: post
 title:  "Let's give it a #try"
 date:   2013-08-25 13:11:10
 author: "Jeroen Weeink"
-tags:
-- ruby on rails
 ---
 A frequent bit of code seen throughout applications looks like this:
 

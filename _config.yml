@@ -13,3 +13,5 @@ markdown: kramdown
 
 gems:
   - jekyll-sitemap
+
+permalink: /posts/:year/:month/:day/:title.html
