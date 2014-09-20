@@ -9,4 +9,4 @@ This test configuration uses Guard with Spork for running tests fast. It generat
 
 It's primarily meant for use with Rails 4. The Gemfile includes several useful development gems.
 
-<script src="https://gist.github.com/fivedigit/7684511.js"></script>
+{% gist fivedigit/7684511 %}

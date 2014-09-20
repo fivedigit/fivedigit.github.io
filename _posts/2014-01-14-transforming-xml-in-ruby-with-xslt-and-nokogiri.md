@@ -11,13 +11,17 @@ First, make sure you have the [Nokogiri gem installed](http://nokogiri.org/tutor
 
 Next, create XML document and XSLT template objects:
 
-    require 'nokogiri'
+{% highlight ruby %}
+require 'nokogiri'
 
-    document = Nokogiri::XML(File.read('input.xml'))
-    template   = Nokogiri::XSLT(File.read('template.xslt'))
+document = Nokogiri::XML(File.read('input.xml'))
+template = Nokogiri::XSLT(File.read('template.xslt'))
 
-    transformed_document = template.transform(document)
+transformed_document = template.transform(document)
+{% endhighlight %}
 
 Then simply pass the XML document into the template's `transform` method. It returns the transformed document which you can use for further transforming or processing, or you could simply write the output to a file:
 
-    File.open('output.html', 'w').write(transformed_document)
+{% highlight ruby %}
+File.open('output.html', 'w').write(transformed_document)
+{% endhighlight %}

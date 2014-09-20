@@ -38,16 +38,23 @@ article {
 /**
  * Pretty printing
  */
- pre.prettyprint {
+ pre {
    background: $color-white;
    width: 100%;
    border: #e0e0e0 solid 1px !important;
    padding: 1em !important;
    font-family: monospace;
    font-size: .8em;
+   line-height: 1.7em;
    white-space: pre-wrap;
 
-   .com {
-     color: $color-gray;
+   code {
+     border: none;
+     background-color: transparent;
+     padding: 0;
    }
+ }
+
+ .gist .line-numbers {
+   width: 3em;
  }
