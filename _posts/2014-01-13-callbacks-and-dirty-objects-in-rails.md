@@ -9,36 +9,32 @@ description: "ActiveModel::Dirty tracks changes made to model attributes, useful
 
 Imagine we have a `Comment` model which is flagged edited whenever its content changes:
 
-{% highlight ruby %}
-class Comment < ActiveRecord::Base
-  before_update :set_edited, if: content_changed?
+    class Comment < ActiveRecord::Base
+      before_update :set_edited, if: content_changed?
 
-  validates :content, presence: true
+      validates :content, presence: true
 
-  def set_edited
-    write_attribute(:edited, true)
-  end
-end
-{% endhighlight %}
+      def set_edited
+        write_attribute(:edited, true)
+      end
+    end
 
 ActiveModel defines magic methods for each attribute to see if they changed. For `content`, it's `content_changed?`. The `content` attribute is now dirty. Whenever the record is saved, the new content is persisted to the database.
 
 A new requirement comes up. We have to store the previous value of the comment in the `previous_content` attribute if the comment has been edited. Luckily Rails makes this a breeze:
 
-{% highlight ruby %}
-class Comment < ActiveRecord::Base
-  before_update :set_edited, :set_previous_content, if: content_changed?
+    class Comment < ActiveRecord::Base
+      before_update :set_edited, :set_previous_content, if: content_changed?
 
-  validates :content, presence: true
+      validates :content, presence: true
 
-  def set_edited
-    write_attribute(:edited, true)
-  end
+      def set_edited
+        write_attribute(:edited, true)
+      end
 
-  def set_previous_content
-    write_attribute(:previous_content, content_was)
-  end
-end
-{% endhighlight %}
+      def set_previous_content
+        write_attribute(:previous_content, content_was)
+      end
+    end
 
 Note how `content_was` is called. Like `content_changed?` this is another magic method in `ActiveModel::Dirty`. It returns the previous value of `content`, or the current value if the content hasn't been changed. No need to store the old value inside some instance variable, the dirty work has already been done for you!

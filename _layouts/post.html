@@ -14,14 +14,13 @@ layout: default
   <div class="row">
     <div class="small-12 columns">
       <div class="info">
-        <div class="date">
-          Posted on
-          <span itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</span>
-          by
-          <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            <span itemprop="name">{{ page.author }}</span>
-          </span>
-        </div>
+        <i class="fa fa-calendar"></i>
+        Posted on
+        <span itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</span>
+        by
+        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ page.author }}</span>
+        </span>
       </div>
     </div>
   </div>

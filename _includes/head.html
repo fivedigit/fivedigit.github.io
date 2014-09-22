@@ -11,8 +11,16 @@
     {% endif %}
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
-    <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/railscasts.css" | prepend: site.baseurl }}">
+    <script src="{{ "/js/highlight.pack.js" | prepend: site.baseurl }}"></script>
+    <link rel="stylesheet" href="{{ "/css/foundation.min.css" | prepend: site.baseurl }}" />
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <script src="{{ "/js/vendor/modernizr.js" | prepend: site.baseurl }}"></script>

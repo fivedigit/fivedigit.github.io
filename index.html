@@ -9,14 +9,13 @@ layout: default
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <div class="info">
-          <div class="date">
-            {{ post.date | date: "%Y-%m-%d" }}
-          </div>
+          <i class="fa fa-calendar"></i>
+          {{ post.date | date: "%Y-%m-%d" }}
         </div>
         <div class="text-justify">
           {{ post.excerpt }}
         </div>
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read more</a>
+        <a class="read-more" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Continue Reading →</a>
       </article>
     {% endfor %}
 </div>

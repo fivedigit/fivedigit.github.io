@@ -1,11 +1,51 @@
-$color-ruby: #b63535;
-$color-white: #fbfbfb;
-$color-brown: #423215;
-$color-black: #555;
-$color-gray: #c0c0c0;
+$ruby: #b63535;
+$white: #fbfbfb;
+$brown: #423215;
+$black: #555;
+$gray: #c0c0c0;
 
-$font: 'Palatino Linotype', Palatino, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', serif;
+@mixin content-font {
+  font-family: 'Fira Sans', serif;
+  font-size: 13px;
+  color: $black;
+}
 
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+@mixin code-font {
+  font-family: 'Inconsolata', 'Consolas', 'Liberation Mono', 'Courier', monospace;
+  font-size: 15px;
+}
+
+@mixin logo-font {
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+@mixin header-font {
+  font-family: 'Oswald', sans-serif;
+  color: $black;
+}
+
+@mixin border-radius($args) {
+  border-radius: $args;
+  -webkit-border-radius: $args;
+  -moz-border-radius: $args;
+  -ms-border-radius: $args;
+  -o-border-radius: $args;
+}
+
+@mixin hover-transition {
+  @include transition(all .3s ease-out);
+}
+
+@mixin transition($args) {
+  transition: $args;
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+}
+
+@mixin box-shadow($x, $y, $size) {
+  box-shadow: $x $y $size $black;
 }

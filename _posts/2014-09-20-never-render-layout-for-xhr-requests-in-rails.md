@@ -8,11 +8,9 @@ description: "Never render the layout for XHR requests in Ruby on Rails, but sti
 
 In Ruby on Rails, it's easy to set the application-wide default to never render a layout in response to XHR requests. Just include this single line in your `ApplicationController`:
 
-{% highlight ruby %}
-class ApplicationController < ActionController::Base
-  layout proc { false if request.xhr? }
-end
-{% endhighlight %}
+    class ApplicationController < ActionController::Base
+      layout proc { false if request.xhr? }
+    end
 
 This way, Rails will also [still use inheritance to look up the layout to render for the controller handling the request][1].
 

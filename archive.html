@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Archives | Crafting Ruby"
 ---
 
 <div class="posts">
@@ -9,9 +10,8 @@ layout: default
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <div class="info">
-          <div class="date">
-            {{ post.date | date: "%Y-%m-%d" }}
-          </div>
+          <i class="fa fa-calendar"></i>
+          {{ post.date | date: "%Y-%m-%d" }}
         </div>
       </article>
     {% endfor %}

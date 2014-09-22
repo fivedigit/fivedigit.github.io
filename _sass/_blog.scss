@@ -1,0 +1,122 @@
+a {
+  color: $ruby;
+
+  &:hover {
+    text-decoration: underline;
+    color: $ruby;
+  }
+}
+
+body {
+  @include content-font;
+  color: $black;
+  background: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include header-font;
+  a       { color: $black; }
+  a:hover { color: $ruby; }
+}
+
+header {
+  @include box-shadow(0, 1px, 5px);
+  background: $ruby;
+  color: $white;
+  margin-bottom: 1em;
+
+  .title      { @include logo-font; }
+  a, a:hover  { color: inherit; }
+  a:hover     { text-decoration: underline; }
+}
+
+nav {
+  .links {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      padding-right: .7em;
+      font-size: 1.3em;
+      color: $black;
+
+      .fa                 { @include hover-transition; }
+      .fa-twitter:hover   { color: #55acee; }
+      .fa-at:hover        { color: $ruby; }
+      .fa-rss:hover       { color: #FF9900; }
+      .fa-stack-overflow:hover  { color: #FE7C18; }
+      .fa-github:hover    { color: #000; }
+    }
+  }
+
+  li {
+    margin: .25em 0;
+  }
+}
+
+.posts {
+  article {
+    margin-bottom: 2em;
+    h2.title {
+      font-size: 2.5em;
+    }
+  }
+
+  .read-more {
+    font-size: 1.3em;
+  }
+}
+
+article {
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  [itemprop="articleBody"] {
+    @include content-font;
+  }
+
+  .info {
+    color: $gray;
+    margin: 1em 0;
+  }
+
+  code {
+    @include code-font;
+    @include border-radius(3px);
+    padding: 2px;
+    font-size: inherit;
+    color: $black;
+  }
+
+  pre {
+    @include border-radius(4px);
+    overflow-x: scroll;
+
+    background: #323232;
+    color: #E6E1DC;
+    padding: 1em;
+    margin: 1em 0;
+
+    code {
+      @include code-font;
+
+      background: none;
+      border: none;
+      padding: 0;
+    }
+  }
+
+  .hljs {
+    background: none;
+  }
+
+  .prev-next {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+   header .title { font-size: 3em; }
+}
