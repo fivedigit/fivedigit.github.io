@@ -36,7 +36,7 @@ nav {
 
     a {
       display: inline-block;
-      padding-right: .7em;
+      margin-right: .7em;
       font-size: 1.3em;
       color: $black;
 
@@ -55,6 +55,8 @@ nav {
 }
 
 .posts {
+  margin-bottom: 2em;
+
   article {
     margin-bottom: 2em;
     h2.title {
@@ -67,6 +69,23 @@ nav {
   }
 }
 
+.archive {
+  margin-bottom: 2em;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  .info {
+    color: $gray;
+  }
+
+  .row {
+    margin-bottom: .5em;
+    font-size: 1.2em;
+  }
+}
+
 article {
   h1 {
     font-size: 3em;
@@ -75,37 +94,37 @@ article {
 
   [itemprop="articleBody"] {
     @include content-font;
+
+    p code {
+      @include code-font;
+      @include border-radius(3px);
+      padding: 2px;
+      font-size: inherit;
+      color: $black;
+    }
+
+    & > pre {
+      @include border-radius(4px);
+      overflow-x: scroll;
+
+      background: #323232;
+      color: #E6E1DC;
+      padding: 1em;
+      margin: 1em 0;
+
+      code {
+        @include code-font;
+
+        background: none;
+        border: none;
+        padding: 0;
+      }
+    }
   }
 
   .info {
     color: $gray;
     margin: 1em 0;
-  }
-
-  code {
-    @include code-font;
-    @include border-radius(3px);
-    padding: 2px;
-    font-size: inherit;
-    color: $black;
-  }
-
-  pre {
-    @include border-radius(4px);
-    overflow-x: scroll;
-
-    background: #323232;
-    color: #E6E1DC;
-    padding: 1em;
-    margin: 1em 0;
-
-    code {
-      @include code-font;
-
-      background: none;
-      border: none;
-      padding: 0;
-    }
   }
 
   .hljs {
@@ -114,6 +133,12 @@ article {
 
   .prev-next {
     font-size: 1.3em;
+  }
+}
+
+.gist {
+  .line-numbers {
+    width: 3em;
   }
 }
 

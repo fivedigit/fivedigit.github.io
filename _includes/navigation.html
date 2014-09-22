@@ -6,22 +6,23 @@
           <h5>About Me</h5>
         </div>
         <p>
-          Hi, I'm Jeroen Weeink, fulltime Ruby on Rails developer and clean code fanatic from the Netherlands.
+          Hi! I'm Jeroen Weeink, fulltime Ruby on Rails developer and clean code fanatic from the Netherlands.
         </p>
         <p class="links">
           <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a>
-          <a href="https://stackoverflow.com/users/920371/fivedigit"><i class="fa fa-stack-overflow"></i></a>
-          <a href="https://github.com/fivedigit"><i class="fa fa-github"></i></a>
-          <a href="https://twitter.com/fivedigit"><i class="fa fa-twitter"></i></a>
+          <a href="https://stackoverflow.com/users/920371/fivedigit" title="Jeroen Weeink on Stack Overflow"><i class="fa fa-stack-overflow"></i></a>
+          <a href="https://github.com/fivedigit" title="Jeroen Weeink on Github"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/fivedigit" title="Jeroen Weeink on Twitter"><i class="fa fa-twitter"></i></a>
           <a href="mailto:jeroen@craftingruby.com"><i class="fa fa-at"></i></a>
         </p>
       </div>
+
       <div class="small-12 medium-6 large-12 columns">
         <div class="title">
           <h5>Latest Posts</h5>
         </div>
         <ul>
-          {% for post in site.posts limit: 20 %}
+          {% for post in site.posts limit: 10 %}
             <li>
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
