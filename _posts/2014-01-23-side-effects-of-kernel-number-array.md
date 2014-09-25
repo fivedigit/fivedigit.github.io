@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Side effects of Kernel#Array"
-date:   2014-01-23 07:32:40
+date:   2014-01-23 07:32:40 UTC
 author: "Jeroen Weeink"
 description: "In Ruby, Kernel#Array converts any object to an Array. This works very well for most objects, but for some types of objects, it may not work as expected."
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rendering XML with Haml"
-date:   2013-02-17 09:44:57
+date:   2013-02-17 09:44:57 UTC
 author: "Jeroen Weeink"
 description: "Everyone knows how to render standard HTML views in Rails with Haml, but rendering XML views using Haml is just as easy, if not easier!"
 ---

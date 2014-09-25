@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let's give it a #try"
-date:   2013-08-25 13:11:10
+date:   2013-08-25 13:11:10 UTC
 author: "Jeroen Weeink"
 description: "Read how Rails' try method can be very helpful against the cluttering presence checks."
 ---

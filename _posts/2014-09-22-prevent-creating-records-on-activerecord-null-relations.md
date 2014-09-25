@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Prevent creating records on ActiveRecord null relations"
-date:   2014-09-22 22:02:00
+date:   2014-09-22 22:02:00 UTC
 author: "Jeroen Weeink"
 description: "Null relations in ActiveRecord can be useful, but they won't prevent all communication to the database. There is a workaround however!"
 ---

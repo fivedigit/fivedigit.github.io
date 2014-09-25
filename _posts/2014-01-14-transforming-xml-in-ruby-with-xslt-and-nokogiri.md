@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Transforming XML in Ruby with XSLT and Nokogiri"
-date:   2014-01-14 18:30:33
+date:   2014-01-14 18:30:33 UTC
 author: "Jeroen Weeink"
 description: "Nokogiri is a full-featured XML and HTML parser and builder. Here's how to transform XML using an XSLT template with a small snippet of code."
 ---
