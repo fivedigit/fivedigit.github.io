@@ -5,13 +5,13 @@ layout: null
 <html>
 <head>
   <title>Crafting Ruby</title>
-  <meta http-equiv="refresh" content="0; url={% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}">
-  <link rel="canonical" href="{% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}" />
+  <meta http-equiv="refresh" content="0; url={{ site.url }}{% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}">
+  <link rel="canonical" href="{{ site.url }}{% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}" />
 </head>
 <body>
   You're being redirected to
-  <a href="{% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}">
-    {% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}
+  <a href="{{ site.url }}{% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}">
+    {{ site.url }}{% post_url 2013-02-19-conditionally-map-a-single-route-to-different-controllers %}
   </a>
 </body>
 </html>
