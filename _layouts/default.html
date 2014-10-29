@@ -17,12 +17,24 @@
       </div>
     </div>
 
+    <script src="{{ "/js/highlight.pack.js" | prepend: site.baseurl }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{{ "/js/vendor/modernizr.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/vendor/jquery.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/foundation.min.js" | prepend: site.baseurl }}"></script>
     <script>
       $(document).foundation();
     </script>
+    <script type="text/javascript">
+      var disqus_shortname = 'craftingruby';
 
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    
   </body>
 
 </html>
