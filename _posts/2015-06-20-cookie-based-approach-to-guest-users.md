@@ -458,7 +458,7 @@ The low level code of storing data inside the cookie store is in here. Take note
 
 You might want to add restrictions to the guest user, such as a maximum amount of saved videos. And when they exceed the maximum, present them with a register screen to continue saving more videos. I'll probably cover this in a future post.
 
-When a guest decides to actually register, it makes sense to import their alredy saved data into the account as a courtesy.
+When a guest decides to actually register, it makes sense to import their already saved data into the account as a courtesy.
 
 Since cookies are transfered with every request to the web server, you might decide to store the data inside the session store. This can be accomplished by one simple change in the controller:
 
