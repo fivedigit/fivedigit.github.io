@@ -5,7 +5,7 @@ $black: #555;
 $gray: #c0c0c0;
 
 @mixin content-font {
-  font-family: 'Fira Sans', serif;
+  font-family: 'Fira Sans', 'Times New Roman', Times, serif;
   font-size: 13px;
   color: $black;
 }
