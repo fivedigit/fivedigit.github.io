@@ -495,7 +495,7 @@ You might also enable users to erase their data. On the `User`, it's easy enough
         # ...
 
         def destroy
-          @store[:saved_for_later]
+          @store[:saved_for_later] = nil
         end
       end
     end
