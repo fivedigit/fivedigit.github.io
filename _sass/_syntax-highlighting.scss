@@ -75,3 +75,7 @@ $string-color: #A5C261;
     .vi    { color: $other-variable-color } // Name.Variable.Instance
     .il    { color: $numeric-color } // Literal.Number.Integer.Long
 }
+
+.nohighlight {
+  color: $white;
+}
