@@ -3,6 +3,7 @@ layout: post
 title:  "Cleaner RSpec examples and failure messages"
 date:   2015-12-15 07:20:00 UTC
 author: "Jeroen Weeink"
+description: "RSpec comes with a lot of flexibility. It can become a disadvantage if examples grow complex. Read this post to learn how to keep your RSpec simple."
 ---
 RSpec offers an extensive, flexible DSL to write your tests. But due to its extensive arsenal of matchers, RSpec requires some more effort to use properly than some other testing frameworks like Minitest.
 

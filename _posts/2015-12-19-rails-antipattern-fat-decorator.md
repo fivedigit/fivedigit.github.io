@@ -3,6 +3,8 @@ layout: post
 title:  "Rails Anti-Pattern: Fat Decorator"
 date:   2015-12-09 07:20:57 UTC
 author: "Jeroen Weeink"
+description: "Learn how unnecessary indexes easily sneak into your Rails application, and what you can do about it."
+description: "In Ruby on Rails, decorators have many benefits. But they too can grow complex. This post explains how to keep decorators small and simple."
 ---
 Using decorators in Ruby on Rails has many benefits. Models become less fat, views less complicated, and using the procedural view helpers becomes a thing of the past.
 
