@@ -12,6 +12,9 @@ github_username:  fivedigit
 markdown: kramdown
 
 gems:
+  - jekyll-gist
+  - jekyll-redirect-from
   - jekyll-sitemap
+  - jemoji
 
 permalink: /posts/:year/:month/:day/:title.html

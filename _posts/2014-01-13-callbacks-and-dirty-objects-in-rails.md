@@ -4,6 +4,7 @@ title:  "Callbacks and Dirty Objects in Rails"
 date:   2014-01-13 22:37:31 UTC
 author: "Jeroen Weeink"
 description: "ActiveModel::Dirty tracks changes made to model attributes, useful inside ActiveRecord callbacks. The dirty work done for you keeps your code clean!"
+redirect_from: /2014/01/13/callbacks-and-dirty-objects-in-rails.html
 ---
 `ActiveModel::Dirty` is responsible for tracking the changes to attributes in an active model. This often comes in handy with ActiveRecord callbacks to perform certain actions only if some attribute's value changed.
 
