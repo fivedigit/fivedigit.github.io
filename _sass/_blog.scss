@@ -106,7 +106,7 @@ article {
       color: $black;
     }
 
-    & > pre {
+    pre {
       @include border-radius(4px);
       overflow-x: scroll;
 
