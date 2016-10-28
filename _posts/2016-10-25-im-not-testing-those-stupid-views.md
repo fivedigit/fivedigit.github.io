@@ -7,7 +7,7 @@ description: "Rails views can evolve into a complex mix of HTML and Ruby conditi
 ---
 Over the course of a Rails project, views that started out very simple can evolve into a complex mix of HTML with complicated nested Ruby conditionals. They become hard to understand, hard to read and hard to work with. Fixing an edge case in those views may involve the painstaking process of writing of an end-to-end test to ensure the bug has been squashed. Those kind of tests have quite an impact on the overall runtime of the test suite, so typically you don't want to write too many of them. Especially not for edge cases. The more end-to-end tests you have, the harder it becomes to make changes to your views because the tests have all kinds of expectations of them.
 
-Keeping views as stupid as possible is important. The complicated logic in views is hard to test because you need need to think a lot about things like HTML, clicking buttons and CSS selectors.
+Keeping views as stupid as possible is important. The complicated logic in views is hard to test because you need to think a lot about things like HTML, clicking buttons and CSS selectors.
 
 A simple solution to the problem is to move the logic into separate classes. Logic in separate classes can easily be unit tested. Unit tests run fast and are the cheapest kind of tests to write.
 
@@ -28,7 +28,7 @@ Consider this contrived example of a view with a bit of complex logic:
       <% end %>
     </div>
 
-You need to think in order to understand what's going on here. Especially that `if` condition may keeps you occupied for a while.
+You need to think in order to understand what's going on here. Especially that `if` condition may keep you occupied for a while.
 
 In Rails projects the obvious candidates to move the logic to are the view decorators. Try to move only the logic and keep HTML rendering out of the decorators as much as possible. Writing tests for rendered HTML is a lot harder than writing a test for a simple return value.
 
