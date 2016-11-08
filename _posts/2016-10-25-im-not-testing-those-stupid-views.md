@@ -65,7 +65,7 @@ Once the logic has been extracted into a decorator, the view became more pleasan
         <% end %>
         <div class="all-the-line-items"></div>
 
-        <% unless @order.can_be_cancelled? %>
+        <% if @order.can_be_cancelled? %>
           <%= link_to "Cancel your order", cancel_order_path(@order) %>
         <% end %>
       <% else %>
