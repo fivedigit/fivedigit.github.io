@@ -44,4 +44,4 @@ If you pass a block to `try`, the block is passed along to the method being call
 
 If `pictures` is `nil`,  the tried method isn't called, and therefore the block won't be called either.
 
-In a nutshell, this is what `try` does. It's also well documented [on the Rails documentation website](http://api.rubyonrails.org/classes/Object.html#method-i-try).
+In a nutshell, this is what `try` does. It's also well documented [on the Rails documentation website](https://api.rubyonrails.org/classes/Object.html#method-i-try).

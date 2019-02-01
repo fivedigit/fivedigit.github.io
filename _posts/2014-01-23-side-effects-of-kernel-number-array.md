@@ -6,7 +6,7 @@ author: "Jeroen Weeink"
 description: "In Ruby, Kernel#Array converts any object to an Array. This works very well for most objects, but for some types of objects, it may not work as expected."
 redirect_from: /2014/01/23/side-effects-of-kernel-number-array.html
 ---
-[`Kernel#Array`](http://devdocs.io/ruby/kernel#method-i-Array) converts an object to an Array by calling `to_ary` or `to_a` on the object passed into it. This works very well to convert most objects into an array:
+[`Kernel#Array`](https://devdocs.io/ruby/kernel#method-i-Array) converts an object to an Array by calling `to_ary` or `to_a` on the object passed into it. This works very well to convert most objects into an array:
 
     Array(5)       # => [5]
     Array([1, 2])  # => [1, 2]
@@ -26,7 +26,7 @@ If not, it attempts to call `to_a` on the object. Some classes like `Time` and `
 
     Time.now.to_a # => [52, 13, 19, 22, 1, 2014, 3, 22, false, "UTC"]
 
-Following the earlier example, if you do want to create an array containing the `Time` object and you're using Rails, you can use [`Array#wrap`](http://devdocs.io/rails/array#method-c-wrap), which doesn't call `to_a` on the argument:
+Following the earlier example, if you do want to create an array containing the `Time` object and you're using Rails, you can use [`Array#wrap`](https://devdocs.io/rails/array#method-c-wrap), which doesn't call `to_a` on the argument:
 
     object_or_array = Time.now
     Array.wrap(object_or_array).first # => Wed, 22 Jan 2014 19:13:22 UTC +00:00

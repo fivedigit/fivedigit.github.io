@@ -14,4 +14,4 @@ In Ruby on Rails, it's easy to set the application-wide default to never render 
 
 This way, Rails will also [still use inheritance to look up the layout to render for the controller handling the request][1].
 
-  [1]: http://guides.rubyonrails.org/layouts_and_rendering.html#rendering-by-default-convention-over-configuration-in-action
+  [1]: https://guides.rubyonrails.org/layouts_and_rendering.html#rendering-by-default-convention-over-configuration-in-action

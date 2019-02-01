@@ -8,7 +8,7 @@ redirect_from: /2014/01/14/transforming-xml-in-ruby-with-xslt-and-nokogiri.html
 ---
 Nokogiri is a full-featured XML and HTML parser and builder. It also allows you to search XML and HTML documents with CSS and XPath selectors. You can also use it to transform XML documents into some other format using XSLT templates.
 
-First, make sure you have the [Nokogiri gem installed](http://nokogiri.org/tutorials/installing_nokogiri.html).
+First, make sure you have the [Nokogiri gem installed](https://nokogiri.org/tutorials/installing_nokogiri.html).
 
 Next, create XML document and XSLT template objects:
 

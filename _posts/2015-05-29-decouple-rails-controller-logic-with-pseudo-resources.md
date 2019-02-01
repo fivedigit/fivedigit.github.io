@@ -142,4 +142,4 @@ By the way, the `cache_key` method is also useful for the view. Since the `cache
 This is a great way to decouple the logic of the homepage from our controller completely. Now, it's much easier to test both the controller and the homepage logic in isolation. When new homepage requirements come along, the changes will happen inside the `Home` class and the view, the controller most likely won't even change at all.
 
 [1]: https://robots.thoughtbot.com/sandi-metz-rules-for-developers
-[2]: http://guides.rubyonrails.org/caching_with_rails.html#conditional-get-support
+[2]: https://guides.rubyonrails.org/caching_with_rails.html#conditional-get-support
