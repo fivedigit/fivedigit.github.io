@@ -11,7 +11,7 @@ github_username:  fivedigit
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-gist
   - jekyll-redirect-from
   - jekyll-sitemap
