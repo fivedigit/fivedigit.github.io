@@ -4,7 +4,7 @@ email: jeroen@craftingruby.com
 description: >
   A Ruby on Rails blog covering RoR features and solutions to uncommon problems.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url:  "http://craftingruby.com" # the base hostname & protocol for your site
+url:  "https://craftingruby.com" # the base hostname & protocol for your site
 twitter_username: fivedigit
 github_username:  fivedigit
 

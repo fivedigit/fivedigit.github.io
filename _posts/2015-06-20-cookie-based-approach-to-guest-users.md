@@ -5,7 +5,7 @@ date:   2015-06-20 18:55:57 UTC
 author: "Jeroen Weeink"
 description: "A database-less and polymorphic approach to handling guest users in Ruby on Rails using the cookie or session store."
 ---
-Nithin Bekal [wrote an excellent post](http://nithinbekal.com/posts/gradual-engagement-rails/) on how to use gradual engagement in Ruby on Rails for guest users by allowing them to publish posts to a site without actually registering.
+Nithin Bekal [wrote an excellent post](https://nithinbekal.com/posts/gradual-engagement-rails/) on how to use gradual engagement in Ruby on Rails for guest users by allowing them to publish posts to a site without actually registering.
 
 This post presents a database-less approach to handling guest users in Rails. It's not necessarily better than Nithin's approach, but the general idea is not to bother our database with guest users' data which eventually has to be cleaned up manually. There also should not be a special treatment for the guest users by the controllers, views and other models.
 
