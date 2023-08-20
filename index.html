@@ -56,7 +56,7 @@ redirect_from:
         <div class="text-justify">
           {{ post.excerpt }}
         </div>
-        <a class="read-more" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Continue Reading →</a>
+        <a class="read-more" href="{{ post.url | prepend: site.baseurl }}" aria-label="Continue reading &quot;{{ post.title }}&quot;">Continue Reading →</a>
       </article>
     {% endfor %}
 </div>

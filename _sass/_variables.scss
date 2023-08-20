@@ -1,12 +1,12 @@
-$ruby: #b63535;
+$ruby: #9f2c2c;
 $white: #fbfbfb;
 $brown: #423215;
-$black: #555;
-$gray: #c0c0c0;
+$black: #333;
+$gray: #666;
 
 @mixin content-font {
   font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-  font-size: 13px;
+  font-size: 0.9rem;
   color: $black;
 }
 

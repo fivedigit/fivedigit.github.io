@@ -1,47 +1,45 @@
-<div id="sidebar">
-  <nav>
-    <div class="row">
-      <div class="small-12 medium-6 large-12 columns">
-        <div class="title">
-          <h5>About Me</h5>
-        </div>
-        <p>
-          Hi! I'm Jeroen Weeink, fulltime Ruby on Rails developer and clean code fanatic from the Netherlands.
-        </p>
-        <p class="links">
-          <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a>
-          <a href="https://stackoverflow.com/users/920371/fivedigit" title="Jeroen Weeink on Stack Overflow"><i class="fa fa-stack-overflow"></i></a>
-          <a href="https://github.com/fivedigit" title="Jeroen Weeink on Github"><i class="fa fa-github"></i></a>
-          <a href="https://twitter.com/fivedigit" title="Jeroen Weeink on Twitter"><i class="fa fa-twitter"></i></a>
-          <a href="mailto:jeroen@craftingruby.com"><i class="fa fa-at"></i></a>
-        </p>
+<nav id="sidebar">
+  <div class="row">
+    <div class="small-12 medium-6 large-12 columns">
+      <div class="title">
+        <h3>About Me</h3>
       </div>
-
-      <div class="small-12 medium-6 large-12 columns">
-        <div class="title">
-          <h5>Latest Posts</h5>
-        </div>
-        <ul>
-          {% for post in site.posts limit: 10 %}
-            <li>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="small-12 medium-6 large-12 columns">
-        <div class="title">
-          <h5>Archives</h5>
-        </div>
-        <ul>
-          <li>
-            <a href="{{ "/archive.html" | prepend: site.baseurl }}">
-              All Posts
-            </a>
-          </li>
-        </ul>
-      </div>
+      <p>
+        Hi! I'm Jeroen Weeink, fulltime Ruby on Rails developer and clean code fanatic from the Netherlands.
+      </p>
+      <p class="links">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="Blog RSS Feed"><i class="fa fa-rss"></i></a>
+        <a href="https://stackoverflow.com/users/920371/fivedigit" title="Jeroen Weeink on Stack Overflow"><i class="fa fa-stack-overflow"></i></a>
+        <a href="https://github.com/fivedigit" title="Jeroen Weeink on Github"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/fivedigit" title="Jeroen Weeink on Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="mailto:jeroen@craftingruby.com" title="Send an email to Jeroen Weeink"><i class="fa fa-at"></i></a>
+      </p>
     </div>
-  </nav>
-</div>
+
+    <div class="small-12 medium-6 large-12 columns">
+      <div class="title">
+        <h3>Latest Posts</h3>
+      </div>
+      <ul>
+        {% for post in site.posts limit: 10 %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="small-12 medium-6 large-12 columns">
+      <div class="title">
+        <h3>Archives</h3>
+      </div>
+      <ul>
+        <li>
+          <a href="{{ "/archive.html" | prepend: site.baseurl }}">
+            All Posts
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

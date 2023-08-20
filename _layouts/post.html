@@ -13,11 +13,11 @@ layout: default
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <div class="info">
-        <i class="fa fa-calendar"></i>
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="info">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
         Posted on
         <span itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</span>
-      </div>
+      </time>
     </div>
   </div>
   <div class="row">
